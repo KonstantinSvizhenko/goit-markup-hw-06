@@ -965,7 +965,7 @@ footer {
   }
   
   .modal-form-textarea:focus {
-    /* border-color: var(--accent-color); */
+    border-color: var(--main-hover-color);
   }
   
   .modal-box {
