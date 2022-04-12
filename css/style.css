@@ -889,11 +889,17 @@ footer {
     justify-content: center;
     cursor: pointer;
   }
+  .modal-close:hover,
+  .modal-close:focus {
+    fill: var(--main-hover-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
   
   .modal-close-icon {
     width: 18px;
     height: 18px;
-    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .is-hidden {
@@ -975,8 +981,8 @@ footer {
     
   }
   
-  .modal-box input,
-  .modal-box textarea {
+  .modal input,
+  .modal textarea {
     margin-top: 4px;
     top: 45px;
     color: #000;
@@ -1028,6 +1034,10 @@ footer {
     background-color: var(--main-hover-color);
     border: none;
     
+  }
+
+  .modal-check:focus+.check-text .check-item {
+    border-color: var(--main-hover-color);
   }
   
   .modal-check-link {
